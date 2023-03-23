@@ -24,21 +24,21 @@ body {
     color: #d9dcd6;
 }
 
-/*CHANGED DIV TO SECTION */ 
-.header section {
+/* CHANGED DIV TO NAV TO CORRECTLY REFERENCE UPDATED HTML TAGS */ 
+.header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
-/*IS THIS DIV OK?  IS THIS NEEDED? */
-.header ul {
-    list-style-type: none;
+/* CHANGED DIV TO NAV TO CORRECTLY REFERENCE UPDATED HTML TAGS */ 
+.header nav ul {
+    list-style-type:none;
 }
 
-/*CHANGED DIV TO SECTION */
-.header section ul li {
+/* CHANGED DIV TO NAV TO CORRECTLY REFERENCE UPDATED HTML TAGS */ 
+.header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -88,55 +88,28 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+/* MERGED ALL BENEFIT-... INTO BENEFIT-INFO SINCE IT ALL CALLED FOR SAME ATTRIBUTES */
+.benefit-info {
     margin-bottom: 32px;
     color: #ffffff;
 }
-
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.benefit-info img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
+/* REMOVED ALL H3 CLASSES MODIFIERS AND SPECIFIED H3 ATTRIBUTES IN ONE CLASS SINCE IT ALL CALLED
+FOR THE SAME CHARACTERISTICS */
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+
 }
 
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+/* MERGED ALL CLASSES FOR THE SPECIFIC SERVICE LIST/DESCRIPTION INTO NEW CLASS "SERVICES" 
+SINCE IT ALL CALLED FOR SAME ATTRIBUTES */
+.services {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -145,49 +118,11 @@ p {
     color: #ffffff;
 }
 
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.search-engine-optimization img {
+.services img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-/* CAN I COMBINE THESE TO APPLY TO ALL H2?*/
-
-.search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
+h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -199,7 +134,7 @@ p {
     text-align: center;
 }
 
-/* REMOVE CLASS NO MORE H2 IN FOOTER
+/* REMOVED CLASS SINCE H2 NO LONGER APPLIES TO FOOTER TAG AFTER HTML UPDATE
 .footer h2 {
     font-size: 20px;
 }
